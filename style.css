@@ -5,8 +5,12 @@
   /* height:60vh; */
 }
 
-#contact, #skills, .projects, .jumbotron {
-  height:70vh;
+#contact, #skills, #projects {
+  margin-bottom: 5em;
+}
+
+.jumbotron {
+  height:50vh;
   padding-top: 2em;
   background-color: white;
 }
@@ -16,8 +20,14 @@
   margin-bottom: 5em;
 }
 
-#projects .col-4 {
-  padding:0px;
+.skills-grid{
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap:2em;
+}
+
+#projects .col-lg-4.col-md-6.bg-light {
+  padding:2px;
 }
 
 .project-container img {
@@ -29,9 +39,7 @@ a img:hover {
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-.jumbotron p, .jumbotron h2 {
-  padding-left: 20px;
-}
+
 
 #contact h2, #skills h2, .jumbotron{
   font-family: 'Source Sans Pro', sans-serif;
@@ -54,8 +62,8 @@ font-family: 'Source Sans Pro', sans-serif;
 
 nav {
   background:transparent;
-
 }
+
 
 .modal-body .row {
   padding-top: 2em;
