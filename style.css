@@ -2,17 +2,15 @@
   /* background-image: url('images/portfolios-woods.jpg');
   background-size:cover; */
   background-color: white;
+  /* height:60vh; */
 }
 
 #contact, #skills, .projects, .jumbotron {
-  min-height:70vh;
+  height:70vh;
   padding-top: 2em;
   background-color: white;
 }
 
-#skills {
-background-color: #f5f7f8;
-}
 
 #skills row {
   margin-bottom: 5em;
@@ -36,17 +34,27 @@ a img:hover {
 }
 
 #contact h2, #skills h2, .jumbotron{
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
 }
 
-.navbar-brand, .navbar-nav {
-font-family: 'Major Mono Display', monospace;
+.navbar-nav {
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand, .say-hello p {
+  font-size: 2.5rem;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+.fa-github-square:hover {
+  color:red;
 }
 
 
 nav {
   background:transparent;
+
 }
 
 .modal-body .row {
@@ -59,7 +67,6 @@ nav {
 
 .footer {
   height:60vh;
-  flex-direction: column;
   /* background-color:#668e8a; */
 }
 
@@ -72,7 +79,5 @@ nav {
   color:white;
   height:20vh;
   width:100%;
-  background-image: url('./images/forest-footer.jpg');
-  background-size: cover;
 
   }
