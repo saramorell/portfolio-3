@@ -100,38 +100,50 @@
           <div class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title" id="FarmLabel">Boulder Farm Map</h2>
-              <p><a href="http://boulder-farm-map.herokuapp.com/">Live Site</a>
+
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>This project is a listing of farms and an integrated svg map that is based on a project by the Boulder Convention and Visitors Bureau called Farm Trail.  Farm Trail is a paper brochure that features a map of farms in Boulder county and a listing of the farms with the various activities that are available at each farm such as farm dinners, workshops, volunteer opportunities, etc.</p>
+              <div class="container">
+              <div class="case-links"><a href="http://boulder-farm-map.herokuapp.com/" target="_blank">Live Site</a> | <a href="https://github.com/saramorell/boulder-farm-map" target="_blank">GitHub Frontend</a> | <a href="http://boulder-farm-map.herokuapp.com/"
+                  target="_blank">GitHub Backend</a></div>
+              <video width="100%" height="auto" controls autoplay>
+                <source src="https://saramorell-web-assets.s3-us-west-2.amazonaws.com/5-sara-morell-boulder-farm-map.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>This project is a listing of farms and an integrated svg map that is based on a project by the Boulder Convention and Visitors Bureau called Farm Trail. Farm Trail is a paper brochure that features a map of farms in Boulder county
+                and a listing of the farms with the various activities that are available at each farm such as farm dinners, workshops, volunteer opportunities, etc.</p>
 
-<p>I really wanted to have some sort of mapping element in this project so I contacted the Boulder CVB to see if I could make an interactive version of their Farm Trail brochure and they said yes.</p>
+                <img src="images/farm-trail-1.png" class="modal-image">
 
-<p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info.</p>
+              <p>I really wanted to have some sort of mapping element in this project so I contacted the Boulder CVB to see if I could make an interactive version of their Farm Trail brochure and they said yes.</p>
 
-<p>At the bottom of most listings is a series of colored icons representing the different activities each farm offers to visitors.</p>
+              <p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info.</p>
 
-<p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities.</p>
+              <p>At the bottom of most listings is a series of colored icons representing the different activities each farm offers to visitors.</p>
 
-<p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted.</p>
+              <p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities.</p>
 
-<p>We can also click on each marker to trigger a scroll to the corresponding farm.</p>
+              <p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted.</p>
 
-<p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React.  To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component so it could be manipulated to interact with other components and receive state.</p>
+              <p>We can also click on each marker to trigger a scroll to the corresponding farm.</p>
 
-<p>The Farm listings are populated by a Rest API I created for the backend using Node.js, Express, and Knex. </p>
+              <p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React. To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component so it could be
+                manipulated to interact with other components and receive state.</p>
+
+              <p>The Farm listings are populated by a Rest API I created for the backend using Node.js, Express, and Knex. </p>
 
             </div>
             <div class="modal-footer">
             </div>
           </div>
+          </div>
         </div>
       </div>
 
-    <!-- Enroute -->
+      <!-- Enroute -->
       <div class="project-container" id="route">
         <a data-toggle="modal" data-target="#enroute">
           <img src='images/enroute-mock.jpg' />
@@ -189,15 +201,15 @@
 
 
 
-              <!-- start gallery images -->
-              <div id="images-wrap" class="images-wrap">
-                <div id="gallery-wrap" class="gallery-wrap">
-                  <!-- insert image tags here -->
+                  <!-- start gallery images -->
+                  <div id="images-wrap" class="images-wrap">
+                    <div id="gallery-wrap" class="gallery-wrap">
+                      <!-- insert image tags here -->
 
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
+              </section>
               <!-- end gallery images -->
 
             </div>

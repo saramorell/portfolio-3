@@ -156,6 +156,9 @@ img.grid-item {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.modal-content {
+  background-color: #f5f7f7;
+}
 
 .image-description {
   text-align: center;
@@ -173,4 +176,32 @@ img.grid-item {
 .foot-icons {
   text-align: center;
   color: #fff;
+}
+
+.modal-body video{
+  padding-bottom: 2em;
+}
+
+.modal-image {
+  padding-bottom: 2em;
+}
+
+.modal-body p   {
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.case-links{
+  padding-bottom: 3em;
+}
+/* remove blue focus for non-keyboard users */
+video:focus{
+  outline: none;
+}
+/* for keyboard users, override everything with
+   a Big Blue Border when focused on any element */
+body.user-is-tabbing *:focus {
+  outline: 2px solid #7AACFE !important; /* for non-webkit browsers */
+  outline: 5px auto -webkit-focus-ring-color !important;
 }
