@@ -82,20 +82,56 @@
   <div id="projects">
     <div class="container project-grid">
 
+      <!-- Farm Modal Link -->
       <div class="project-container" id="farm">
         <a data-toggle="modal" data-target="#boulder-farm">
           <img src='images/farm-trail-mock.jpg' />
           <div class="overlay">
             <div class="text">
               <h2>Boulder Farm Map</h2>
-              <p>Interactive story map and tour of farms in Boulder, CO</p>
+              <p>Interactive story map and tour of farms in Boulder, CO using React and SVG</p>
             </div>
           </div>
         </a>
       </div>
-      <!-- Modal -->
+      <!-- Farm Modal -->
+      <div class="modal fade" id="boulder-farm" tabindex="-1" role="dialog" aria-labelledby="FarmLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="FarmLabel">Boulder Farm Map</h2>
+              <p><a href="http://boulder-farm-map.herokuapp.com/">Live Site</a>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>This project is a listing of farms and an integrated svg map that is based on a project by the Boulder Convention and Visitors Bureau called Farm Trail.  Farm Trail is a paper brochure that features a map of farms in Boulder county and a listing of the farms with the various activities that are available at each farm such as farm dinners, workshops, volunteer opportunities, etc.</p>
 
+<p>I really wanted to have some sort of mapping element in this project so I contacted the Boulder CVB to see if I could make an interactive version of their Farm Trail brochure and they said yes.</p>
 
+<p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info.</p>
+
+<p>At the bottom of most listings is a series of colored icons representing the different activities each farm offers to visitors.</p>
+
+<p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities.</p>
+
+<p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted.</p>
+
+<p>We can also click on each marker to trigger a scroll to the corresponding farm.</p>
+
+<p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React.  To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component so it could be manipulated to interact with other components and receive state.</p>
+
+<p>The Farm listings are populated by a Rest API I created for the backend using Node.js, Express, and Knex. </p>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Enroute -->
       <div class="project-container" id="route">
         <a data-toggle="modal" data-target="#enroute">
           <img src='images/enroute-mock.jpg' />
@@ -108,7 +144,8 @@
           </div>
         </a>
       </div>
-      <!-- Modal -->
+      <!-- Enroute Modal -->
+
 
       <div class="project-container" id="nama">
         <a data-toggle="modal" data-target="#namaste">
@@ -121,7 +158,54 @@
           </div>
         </a>
       </div>
-      <!-- Modal -->
+
+      <!-- Photo Modal Link -->
+      <div class="project-container" id="photo">
+        <a data-toggle="modal" data-target="#photos">
+          <img src='images/tea-photos.jpg' />
+          <div class="overlay">
+            <div class="text">
+              <h2>Photography</h2>
+              <p>A collection of my food & product photography</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Photos Modal -->
+      <div class="modal fade" id="photos" tabindex="-1" role="dialog" aria-labelledby="PhotoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="PhotoLabel">Food & Product Photograpy</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- end modal header -->
+
+            <div class="modal-body">
+              <section id="gallery" class="gallery">
+                <div class="container">
+
+
+
+              <!-- start gallery images -->
+              <div id="images-wrap" class="images-wrap">
+                <div id="gallery-wrap" class="gallery-wrap">
+                  <!-- insert image tags here -->
+
+                </div>
+              </div>
+            </div>
+          </section>
+              <!-- end gallery images -->
+
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </div>
@@ -172,7 +256,7 @@
     <div class="footer">
       <div class="container d-flex justify-content-end">
         <div class="col-lg-6">
-          <p>saramorell@gmail.com |resume</p>
+          <p>saramorell@gmail.com | resume</p>
 
         </div>
         <div class="col-lg-6 d-flex justify-content-end">
