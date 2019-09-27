@@ -8,6 +8,9 @@
   <title></title>
 
 
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Source+Sans+Pro|Nanum+Myeongjo&display=swap" rel="stylesheet">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,8 +22,7 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Libre+Baskerville|Dawning+of+a+New+Day|Rosario|Lora|Source+Sans+Pro|Nanum+Myeongjo&display=swap" rel="stylesheet">
+
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,7 +38,7 @@
 
 <body>
 
-  <div class="wrapper">
+  <section class="masthead">
     <nav class="navbar navbar-expand-lg navbar-light container">
       <a class="navbar-brand" href="#">
         Sara Morell
@@ -56,11 +58,31 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
+    <div class="jumbotron jumbotron-fluid d-flex">
       <div class="container">
         <row>
           <div class='jumbotron-body'>
-            <h2 class="lead">Hello. I'm a fullstack developer/ designer with a passion for user experience, design thinking, and maps. </h2>
+
+            <div class="d-flex">
+            <div class="hello-h">
+              h
+            </div>
+            <div class="hello-e">
+              e
+            </div>
+            <div class="hello-l">
+              l
+            </div>
+            <div class="hello-ll">
+              l
+            </div>
+            <div class="hello-o">
+              o
+            </div>
+          </div>
+        <h2 class="lead">I'm a fullstack developer/ designer with a passion for user experience, design thinking, and maps. </h2>
+
+
             <!-- <p>
               <span style={{color:"#ffffff", paddingRight:"1em"}}>
                 <i class="fab fa-github fa-2x"></i>
@@ -76,10 +98,13 @@
         </row>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Projects section -->
-  <div id="projects">
+  <section id="projects">
+    <!-- <div class="title text-center">
+      <h2>Recent Work</h2>
+    </div> -->
     <div class="container project-grid">
 
       <!-- Farm Modal Link -->
@@ -99,7 +124,7 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 class="modal-title" id="FarmLabel">Boulder Farm Map</h2>
+              <h2 class="modal-title container" id="FarmLabel">Boulder Farm Map</h2>
 
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -107,38 +132,61 @@
             </div>
             <div class="modal-body">
               <div class="container">
-              <div class="case-links"><a href="http://boulder-farm-map.herokuapp.com/" target="_blank">Live Site</a> | <a href="https://github.com/saramorell/boulder-farm-map" target="_blank">GitHub Frontend</a> | <a href="http://boulder-farm-map.herokuapp.com/"
-                  target="_blank">GitHub Backend</a></div>
-              <video width="100%" height="auto" controls autoplay>
+                <div class="case-links">
+                  <a href="http://boulder-farm-map.herokuapp.com/" target="_blank">Live Site</a>
+                  <a href="https://github.com/saramorell/boulder-farm-map" target="_blank">GitHub Frontend</a>
+                  <a href="http://boulder-farm-map.herokuapp.com/" target="_blank">GitHub Backend</a>
+                </div>
+                <!-- <video width="100%" height="auto" controls autoplay>
                 <source src="https://saramorell-web-assets.s3-us-west-2.amazonaws.com/5-sara-morell-boulder-farm-map.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>
-              <p>This project is a listing of farms and an integrated svg map that is based on a project by the Boulder Convention and Visitors Bureau called Farm Trail. Farm Trail is a paper brochure that features a map of farms in Boulder county
-                and a listing of the farms with the various activities that are available at each farm such as farm dinners, workshops, volunteer opportunities, etc.</p>
+              </video> -->
+
+                <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, SVG, React, Node, Express, Knex, PostgreSQL, Adobe Illustrator </strong></p>
+
+                <img src="images/farm-trail-mock.jpg" class="shadow modal-image ">
+
+                <h3>Background</h3>
+                <p>I have always loved maps. I could spend hours exploring maps, atlases, even google maps. I especially love when maps are used online in interactive storytelling, adding an additional layer of understanding to information by
+                  connecting that information to a place.</p>
+
+                <p>While a student at Galvanize, I became increasingly interested in all of the options to use code to make maps and other data visualizations, and began to explore various javascript libraries such as leaflet.js, d3.js, and also
+                  animated svgs, so I knew that I wanted my final capstone project to have a map component.</p>
+
+                <p>I used to work for a local farm here in Colorado, and one idea I had was to make an interactive tour of farms in the area. In my research for this, I found that the Boulder Convention and Visitor’s Bureau had already created a
+                  really amazing printed map of farms and farm activities in Boulder County. I contacted them to see if I could make an interactive version and they said yes.</p>
+
+                <img src="images/farm-top-of-page.jpg" class="modal-image">
+
+                <p>As this was a solo project, I was responsible for the entire project from research, conception, design, wireframing, front and bavk-end development and deployment in a two week time frame. </p>
+
+
+                <h3>Features</h3>
+                <p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info. At the bottom of most listings is a series of colored icons representing the different activities each
+                  farm offers to visitors.</p>
 
                 <img src="images/farm-trail-1.png" class="modal-image">
 
-              <p>I really wanted to have some sort of mapping element in this project so I contacted the Boulder CVB to see if I could make an interactive version of their Farm Trail brochure and they said yes.</p>
+                <p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities. </p>
 
-              <p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info.</p>
+                <img src="images/activity-detail.jpg" class="modal-image">
 
-              <p>At the bottom of most listings is a series of colored icons representing the different activities each farm offers to visitors.</p>
+                <p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted. You can also click on each marker to trigger a scroll to the corresponding farm.
+                </p>
 
-              <p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities.</p>
+                <img src="images/farm-map-detail.jpg" class="modal-image">
 
-              <p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted.</p>
+                <p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React. To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component. This allowed the me
+                  to add additional javascript to the svg code so that it could interact with other components and receive state.</p>
 
-              <p>We can also click on each marker to trigger a scroll to the corresponding farm.</p>
+                <img src="images/svg-code-detail.jpg" class="modal-image">
 
-              <p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React. To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component so it could be
-                manipulated to interact with other components and receive state.</p>
-
-              <p>The Farm listings are populated by a Rest API I created for the backend using Node.js, Express, and Knex. </p>
-
+                <p>The farms are populated by a Rest API I created for the backend using a postgreSQL database, Node.js, Express, and Knex.
+                </p>
+              </div>
+              <div class="modal-footer">
+              </div>
             </div>
-            <div class="modal-footer">
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -157,8 +205,65 @@
         </a>
       </div>
       <!-- Enroute Modal -->
+      <div class="modal fade" id="enroute" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enroute</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="case-links"><a href="http://boulder-farm-map.herokuapp.com/" target="_blank">Live Site</a> | <a href="https://github.com/saramorell/boulder-farm-map" target="_blank">GitHub Frontend</a> | <a
+                  href="http://boulder-farm-map.herokuapp.com/" target="_blank">GitHub Backend</a></div>
+
+              <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, Node, Express, Knex, PostgreSQL, Google Maps API </strong></p>
+
+              <h2>Background</h2>
+              <p>Project Enroute is the brainchild of the The South King County Fire Training Consortium, and is an application that attempts to solve a real-world problem of communication and response times with ambulance crews.</p>
+
+              <p>The problem is that right now when you call 911 in Seattle, Fire is deployed first to assess and then they call in paramedic transportation if advanced life support is needed. Ambulance companies are typically privately owned and on a different radio and dispatch system. So it's a convoluted process for a Fire team to communicate directly with an ambulance. </p>
 
 
+              <p>Enroute works to solve this problem by allowing the Fire team to see where the Ambulance is in relation to the incident. It also gives the Fire team an ETA of the ambulance which helps give them a sense of how much time they have to prep and move the patient. Lastly, it gives Fire a direct chat messaging system that quickly links them to the Ambulance.</p>
+              <div class="image-block">
+                <figure>
+                  <img src="images/enroute-login.png" class="modal-image">
+                  <figcaption>
+                    Login screen
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="images/enroute-map.png" class="modal-image">
+                  <figcaption>
+                    Ambulance location screen
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="images/enroute-chat.png" class="modal-image">
+                  <figcaption>
+                    WebSocket powered messaging screen
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="images/enroute-account-2.png" class="modal-image">
+                  <figcaption>
+                    User account screen
+                  </figcaption>
+                </figure>
+            </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Namaste Modal Link -->
       <div class="project-container" id="nama">
         <a data-toggle="modal" data-target="#namaste">
           <img src='images/namaste_mockup.jpg' />
@@ -169,6 +274,47 @@
             </div>
           </div>
         </a>
+      </div>
+      <!-- Namaste Modal -->
+      <div class="modal fade" id="namaste" tabindex="-1" role="dialog" aria-labelledby="namasteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="namasteLabel">Namaste Solar HubSpot Form Integration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row d-flex">
+                  <div class="col-4">
+                    <img src="/Users/sara/Desktop/workspace/q5/portfolio-3/images/namaste_mobile.png" style="width:100%;height:auto;" />
+                  </div>
+                  <div class="col-8">
+                    <div class="case-links"><a href="https://www.namastesolar.com/" target="_blank">Live Site</a></div>
+                    <p><strong>Technologies Used: HTML, CSS, WordPress, Divi WordPress Theme, HubSpot, LambdaTest</strong></p>
+                    <p>The Marketing Department at Namaste Solar uses the HubSpot Marketing Automation software for Lead Generation and customer insights. They have a number of HubSpot generated forms embedded throughout their WordPress
+                      website,
+                      including their homepage. One day these forms lost their formatting and were displaying incorrectly. They were having trouble figuring out what went wrong because they had a bunch of css from multiple developers and site
+                      versions.</p>
+                    <p>I was hired by the Namaste marketing department to dig in and troubleshoot the formatting issue as well as go through their existing CSS and optimize it by removing an unnecessary code. </p>
+                  </div>
+                </div>
+
+                <div class="row d-flex flex-column">
+                  <img src="/Users/sara/Desktop/workspace/q5/portfolio-3/images/namaste_before.jpg" style="width:100%;height:100%;" />
+                  <p class="image-description">Before</p>
+                </div>
+
+                <div class="row d-flex flex-column">
+                  <img src="/Users/sara/Desktop/workspace/q5/portfolio-3/images/namaste_after.png" style="width:100%;height:100%;" />
+                  <p class="image-description">After</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Photo Modal Link -->
@@ -221,16 +367,16 @@
 
 
     </div>
-  </div>
+  </section>
 
   <!-- Skills Section -->
-  <div id="skills">
+  <section id="skills">
     <div class="container">
-      <div class="title d-flex justify-content-center">
+      <div class="title text-center">
         <h2>Skills</h2>
       </div>
-      <div class="skills-grid text-center">
-        <div class="col-lg-3">
+      <div class="row text-center">
+        <div class="skill-item col-lg-3 col-md-6">
           <p>HTML 5</p>
           <p>CSS 3</p>
           <p>JavaScript ES6+</p>
@@ -238,21 +384,21 @@
           <p>Node.js</p>
         </div>
 
-        <div class="col-lg-3">
+        <div class="skill-item col-lg-3 col-md-6">
           <p>Express.js</p>
           <p>PostgresQL</p>
           <p>SQL</p>
           <p>Knex.js</p>
           <p>WordPress</p>
         </div>
-        <div class="col-lg-3">
+        <div class="skill-item col-lg-3 col-md-6">
           <p>Restful APIs</p>
           <p>Relational Databases</p>
           <p>SVG animation</p>
           <p>Adobe Creative Suite</p>
           <p>Bootstrap | Materialize UI</p>
         </div>
-        <div class="col-lg-3">
+        <div class="skill-item col-lg-3 col-md-6">
           <p>Git/ GitHub</p>
           <p>Ajax</p>
           <p>Netlify</p>
@@ -261,14 +407,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Contact -->
   <div id='contact'>
     <div class="footer">
       <div class="container d-flex justify-content-end">
-        <div class="col-lg-6">
-          <p>saramorell@gmail.com | resume</p>
+        <div class="col-lg-6 contact-links">
+          <p><a href="mailto:saramorell@gmail.com" class="contact-link">saramorell@gmail.com</a> | <a href="#" class="contact-link">resume</a></p>
 
         </div>
         <div class="col-lg-6 d-flex justify-content-end">
@@ -302,6 +448,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="index.js"></script>
 </body>
