@@ -22,7 +22,7 @@ h3 {
 }
 
 #skills {
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
   min-height:90vh;
 }
 
@@ -49,6 +49,12 @@ h2.lead {
   font-size: 2.5rem;
 }
 
+.lets-connect {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 5em;
+  color:rgb(255, 255, 255, 0.7);
+}
+
 .hello-h, .hello-e, .hello-l, .hello-ll, .hello-o {
   margin-top: -50px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -56,22 +62,25 @@ h2.lead {
   position: relative;
   font-size: 10rem;
   opacity: 0;
-  -webkit-animation: mymove 1s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 1.5s;  /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-  animation: mymove 1s;
+  animation: mymove 1.5s;
   animation-fill-mode: forwards;
 }
-.hello-e {
-  animation-delay:.5s;
-}
-.hello-l {
+.hello-h {
   animation-delay:1s;
 }
+.hello-e {
+  animation-delay:2s;
+}
+.hello-l {
+  animation-delay:3s;
+}
 .hello-ll {
-  animation-delay:1.5s;
+  animation-delay:4s;
 }
 .hello-o {
-  animation-delay:2s;
+  animation-delay:5s;
 }
 
 
@@ -163,12 +172,13 @@ h2.lead {
   font-family: 'Dawning of a New Day', cursive;
 }
 
-.contact-link {
-  color:#fff;
-}
 
 nav {
   background: transparent;
+}
+
+.contact-link {
+  color:#fff;
 }
 
 /* gallery styling */
