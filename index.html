@@ -59,12 +59,11 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid d-flex">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <row>
-          <div class='jumbotron-body'>
+        <div class='jumbotron-body'>
 
-            <div class="d-flex">
+          <div class="d-flex">
             <div class="hello-h">
               h
             </div>
@@ -81,22 +80,8 @@
               o
             </div>
           </div>
-        <h2 class="lead">I'm a fullstack developer/ designer with a passion for user experience, responsive design, and maps. </h2>
-
-
-            <!-- <p>
-              <span style={{color:"#ffffff", paddingRight:"1em"}}>
-                <i class="fab fa-github fa-2x"></i>
-              </span>
-              <span style={{color:"#ffffff", paddingRight:"1em"}}>
-                <i class="la la-linkedin-square"></i>
-              </span>
-              <span style={{color:"#ffffff", paddingRight:"1em"}}>
-                <i class="fab fa-instagram fa-2x"></i>
-              </span>
-            </p> -->
-          </div>
-        </row>
+          <h2 class="lead">I'm a fullstack developer/ designer with a passion for user experience, responsive design, and maps. </h2>
+        </div>
       </div>
     </div>
   </section>
@@ -106,8 +91,8 @@
     <!-- <div class="title text-center">
       <h2>Recent Work</h2>
     </div> -->
-    <div class="container project-grid">
-
+    <div class="container">
+      <div class="project-grid">
       <!-- Farm Modal Link -->
       <div class="project-container" id="farm">
         <a href="#" data-toggle="modal" data-target="#boulder-farm">
@@ -210,57 +195,60 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Enroute</h5>
+              <h2 class="modal-title" id="exampleModalLabel">Enroute</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="container">
-              <div class="case-links"><a href="https://enroute-g106.herokuapp.com" target="_blank">Live Site</a> | <a href="https://github.com/saramorell/enroute" target="_blank">GitHub</a>
+                <div class="case-links"><a href="https://enroute-g106.herokuapp.com" target="_blank">Live Site</a><a href="https://github.com/saramorell/enroute" target="_blank">GitHub</a>
 
-              <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, Node, Express, Knex, PostgreSQL, Google Maps API </strong></p>
+                  <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, Node, Express, Knex, PostgreSQL, Google Maps API</strong></p>
 
-              <h2>Background</h2>
-              <p>Project Enroute is the brainchild of the The South King County Fire Training Consortium, and is an application that attempts to solve a real-world problem of communication and response times with ambulance crews.</p>
+                  <figure>
+                    <img src="images/enroute-mock.jpg" class="modal-image shadow">
+                  </figure>
 
-              <p>The problem is that right now when you call 911 in Seattle, Fire is deployed first to assess and then they call in paramedic transportation if advanced life support is needed. Ambulance companies are typically privately owned and on a different radio and dispatch system. So it's a convoluted process for a Fire team to communicate directly with an ambulance. </p>
+                  <p>Project Enroute is the brainchild of the The South King County Fire Training Consortium, and is an application that attempts to solve a real-world problem of communication and response times with ambulance crews.</p>
+
+                  <p>The problem is that right now when you call 911 in Seattle, Fire is deployed first to assess and then they call in paramedic transportation if advanced life support is needed. Ambulance companies are typically privately owned and
+                    on a different radio and dispatch system. So it's a convoluted process for a Fire team to communicate directly with an ambulance. </p>
 
 
-              <p>Enroute works to solve this problem by allowing the Fire team to see where the Ambulance is in relation to the incident. It also gives the Fire team an ETA of the ambulance which helps give them a sense of how much time they have to prep and move the patient. Lastly, it gives Fire a direct chat messaging system that quickly links them to the Ambulance.</p>
-              <div class="image-block">
-                <figure>
-                  <img src="images/enroute-login.png" class="modal-image">
-                  <figcaption>
-                    Login screen
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img src="images/enroute-map.png" class="modal-image">
-                  <figcaption>
-                    Ambulance location screen
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img src="images/enroute-chat.png" class="modal-image">
-                  <figcaption>
-                    WebSocket powered messaging screen
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img src="images/enroute-account-2.png" class="modal-image">
-                  <figcaption>
-                    User account screen
-                  </figcaption>
-                </figure>
-            </div>
-            </div>
-            </div>
-            <div class="modal-footer">
+                  <p>Enroute works to solve this problem by allowing the Fire team to see where the Ambulance is in relation to the incident. It also gives the Fire team an ETA of the ambulance which helps give them a sense of how much time they have
+                    to prep and move the patient. Lastly, it gives Fire a direct chat messaging system that quickly links them to the Ambulance.</p>
+                  <div class="image-block">
+                    <figure>
+                      <img src="images/enroute-login.png" class="modal-image">
+                      <figcaption>
+                        Login screen
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/enroute-map.png" class="modal-image">
+                      <figcaption>
+                        Ambulance location screen
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/enroute-chat.png" class="modal-image">
+                      <figcaption>
+                        WebSocket powered messaging screen
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/enroute-account-2.png" class="modal-image">
+                      <figcaption>
+                        User account screen
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
 
@@ -281,7 +269,7 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="namasteLabel">Namaste Solar HubSpot Form Integration</h5>
+              <h2 class="modal-title" id="namasteLabel">Namaste Solar</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -295,6 +283,8 @@
                   <div class="col-8">
                     <div class="case-links"><a href="https://www.namastesolar.com/" target="_blank">Live Site</a></div>
                     <p><strong>Technologies Used: HTML, CSS, WordPress, Divi WordPress Theme, HubSpot, LambdaTest</strong></p>
+
+                    <h5>Custom HubSpot Form Integration</h5>
                     <p>The Marketing Department at Namaste Solar uses the HubSpot Marketing Automation software for Lead Generation and customer insights. They have a number of HubSpot generated forms embedded throughout their WordPress
                       website,
                       including their homepage. One day these forms lost their formatting and were displaying incorrectly. They were having trouble figuring out what went wrong because they had a bunch of css from multiple developers and site
@@ -304,7 +294,7 @@
                 </div>
 
                 <div class="row d-flex flex-column">
-                  <img src="images/namaste_before.jpg" style="width:100%;height:100%;"/>
+                  <img src="images/namaste_before.jpg" style="width:100%;height:100%;" />
                   <p class="image-description">Before</p>
                 </div>
 
@@ -358,15 +348,11 @@
                 </div>
               </section>
               <!-- end gallery images -->
-
-            </div>
-            <div class="modal-footer">
             </div>
           </div>
         </div>
       </div>
-
-
+    </div>
     </div>
   </section>
 
@@ -414,21 +400,21 @@
   <!-- Contact -->
   <section id="contact">
     <div class="footer">
-      <div class="container ">
-        <div class="row d-flex">
-        <div class="col-lg-6 contact-links">
+      <div class="container"
+      <div class="row">
+        <div class="col center contact-links align-self-center">
           <p><a href="mailto:saramorell@gmail.com" class="contact-link">saramorell@gmail.com</a> | <a href="images/sara-morell-resume.pdf" target="_blank" class="contact-link">resume</a></p>
 
         </div>
-        <div class="col-lg-6 d-flex justify-content-end">
+        <div class="col d-flex justify-content-center">
           <div>
             <a href="https://github.com/saramorell" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
 
             <a href="https://www.linkedin.com/in/saramorell/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
           </div>
         </div>
-      </div>
-     </div> <!-- row -->
+    </div>
+    </div>
     </div>
   </section>
 
