@@ -28,10 +28,12 @@ a {
 #skills {
   padding-bottom: 10vh;
   min-height:90vh;
+
 }
 
 #skills h2 {
   font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .skill-item {
@@ -39,7 +41,8 @@ a {
   transform: scale(1);
   opacity: 1;
   transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  padding-top: 2em;
 }
 
 
@@ -169,11 +172,15 @@ h2.lead {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.text h2 {
+  font-weight: 700;
+}
 
 .title {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-weight: 300;
 }
 
 .navbar-nav {
