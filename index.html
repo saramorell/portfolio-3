@@ -127,10 +127,11 @@
                 <source src="https://saramorell-web-assets.s3-us-west-2.amazonaws.com/5-sara-morell-boulder-farm-map.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video> -->
+                <p>Boulder Farm Map is an interactive map and tour of farms in Boulder County, CO based on the the Boulder Convention and Visitor's Bureau's <em>Farm Trail</em> brochure.
 
-                <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, SVG, React, Node, Express, Knex, PostgreSQL, Adobe Illustrator </strong></p>
+                <p><em>Technologies Used: HTML, CSS, JavaScript ES6, SVG, React, Node, Express, Knex, PostgreSQL, Adobe Illustrator </em></p>
 
-                <img src="images/farm-trail-mock.jpg" class="shadow modal-image ">
+                <img src="images/farm-trail-mock.jpg" class="shadow rounded modal-image ">
 
                 <h3>Background</h3>
                 <p>I have always loved maps. I could spend hours exploring maps, atlases, even google maps. I especially love when maps are used online in interactive storytelling, adding an additional layer of understanding to information by
@@ -139,33 +140,32 @@
                 <p>While a student at Galvanize, I became increasingly interested in all of the options to use code to make maps and other data visualizations, and began to explore various javascript libraries such as leaflet.js, d3.js, and also
                   animated svgs, so I knew that I wanted my final capstone project to have a map component.</p>
 
+
+
+                <img src="images/farm-map-top.jpg" class="shadow rounded modal-image">
+
                 <p>I used to work for a local farm here in Colorado, and one idea I had was to make an interactive tour of farms in the area. In my research for this, I found that the Boulder Convention and Visitor’s Bureau had already created a
                   really amazing printed map of farms and farm activities in Boulder County. I contacted them to see if I could make an interactive version and they said yes.</p>
 
-                <img src="images/farm-top-of-page.jpg" class="modal-image">
-
                 <p>As this was a solo project, I was responsible for the entire project from research, conception, design, wireframing, front and back-end development and deployment in a two week time frame. </p>
 
+                <img src="images/farm-trail-1.jpg" class="shadow rounded modal-image">
 
                 <h3>Features</h3>
                 <p>The main feature of this site is a scrollable listing of 21 area farms with a photo, location, description and contact info. At the bottom of most listings is a series of colored icons representing the different activities each
                   farm offers to visitors.</p>
 
-                <img src="images/farm-trail-1.png" class="modal-image">
-
                 <p>You can hover over these icons and see a popup of what they represent such as tours, workshops, farm dinners, and volunteer opportunities. </p>
 
-                <img src="images/activity-detail.jpg" class="modal-image">
+                <img src="images/activity-detail.jpg" class="shadow rounded modal-image">
 
                 <p>These farm listings are connected to the map on the right and as you scroll through the farms, you can see the corresponding map marker highlighted. You can also click on each marker to trigger a scroll to the corresponding farm.
                 </p>
 
-                <img src="images/farm-map-detail.jpg" class="modal-image">
-
                 <p>The map is an SVG that I created in Adobe illustrator and the frontend is built with React. To integrate the map with the farm listings I took the code from the svg file and placed it inside a react component. This allowed the me
                   to add additional javascript to the svg code so that it could interact with other components and receive state.</p>
 
-                <img src="images/svg-code-detail.jpg" class="modal-image">
+                <img src="images/farm-code.jpg" class="shadow rounded modal-image">
 
                 <p>The farms are populated by a Rest API I created for the backend using a postgreSQL database, Node.js, Express, and Knex.
                 </p>
@@ -205,16 +205,17 @@
                 <div class="case-links"><a href="https://enroute-g106.herokuapp.com" target="_blank">Live Site</a><a href="https://github.com/saramorell/enroute" target="_blank">GitHub</a>
                 </div>
 
-                  <p><strong>Technologies Used: HTML, CSS, JavaScript ES6, Google Maps API Node, Express, Knex, PostgreSQL</strong></p>
+                  <p>Enroute is an application that attempts to solve a problem of communication and response times between fire and ambulance crews developed for the South King County Fire Training Consortium in Seattle, WA.</p>
+
+                  <p><em>Technologies Used: HTML, CSS, JavaScript ES6, Google Maps API, Node, Express, Knex, PostgreSQL</em></p>
 
                   <figure>
                     <img src="images/enroute-mock.jpg" class="modal-image shadow">
                   </figure>
 
-                  <p>Enroute is an application that attempts to solve a real-world problem of communication and response times with ambulance crews developed for the South King County Fire Training Consortium in Seattle, WA as a student project at Galvanize.</p>
-
-                  <p>The problem is that right now when you call 911 in Seattle, Fire is deployed first to assess and then they call in paramedic transportation if advanced life support is needed. Ambulance companies are typically privately owned and
-                    on a different radio and dispatch system. So it's a convoluted process for a Fire team to communicate directly with an ambulance. </p>
+                  <h3>Background</h3>
+                  <p>When you call 911 in Seattle, Fire is deployed first to assess the emergency and then they call in paramedic transportation if advanced life support is needed. Ambulance companies are typically privately owned and
+                    on a different radio and dispatch system. For the Fire and Ambulence teams to communicate, they have to go through their respective dispach systems and are unable to communicate directly. </p>
 
 
                   <p>Enroute works to solve this problem by allowing the Fire team to see where the Ambulance is in relation to the incident. It also gives the Fire team an ETA of the ambulance which helps give them a sense of how much time they have
